@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--alpha anim that lasts for 1500 milliSec and moves from opaque to transparent, repeatMode = reverse
+ was just to restore View back for other anim. and repeat count allows reverse repeatMode to be done once-->
+<objectAnimator
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:propertyName="alpha"
+        android:duration="1500"
+        android:valueFrom="1.0"
+        android:valueTo="0.0"
+        android:valueType="floatType"
+        android:repeatMode="reverse"
+        android:repeatCount = "1"/>

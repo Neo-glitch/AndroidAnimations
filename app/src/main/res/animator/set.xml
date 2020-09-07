@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Animator set used for more learning about set animation
+
+-->
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+    <objectAnimator
+        android:propertyName="rotationX"
+        android:duration="500"
+        android:valueFrom="0"
+        android:valueTo="360"
+        android:valueType="floatType"/>
+
+    <!-- ordering = "Sequentially" means animators will run one after the other while "together means both works sim"
+    and interpolator adds effects-->
+    <set
+        android:ordering="together">
+
+        <objectAnimator
+            android:propertyName="scaleX"
+            android:duration="1000"
+            android:valueFrom="1"
+            android:valueTo="2.5"
+            android:valueType="floatType"
+            android:interpolator="@android:anim/bounce_interpolator"/>
+
+        <objectAnimator
+            android:propertyName="scaleY"
+            android:duration="1000"
+            android:valueFrom="1"
+            android:valueTo="2.5"
+            android:valueType="floatType"
+            android:interpolator="@android:anim/bounce_interpolator"/>
+
+    </set>
+
+</set>

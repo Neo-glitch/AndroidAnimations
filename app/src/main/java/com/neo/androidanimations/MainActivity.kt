@@ -1,6 +1,7 @@
 package com.neo.androidanimations
 
 import android.animation.*
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.animation.BounceInterpolator
@@ -230,5 +231,10 @@ class MainActivity : AppCompatActivity(), Animator.AnimatorListener {
         }
 
 
+    }
+
+    fun goToDrawableAnimActivity(view: View) {
+        intent = Intent(this, DrawableAnimActivity::class.java)
+        startActivity(intent)
     }
 }

@@ -75,6 +75,6 @@ class TransitionActivity : AppCompatActivity() {
     }
 
     fun goToTransitionWithoutScene(view: View) {
-        startActivity(Intent(this, TransitionWithoutScene::class.java))
+        startActivity(Intent(this, TransitionWithoutSceneActivity::class.java))
     }
 }

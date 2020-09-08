@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TransitionWithoutScene"></activity>
+        <activity android:name=".ViewPagerAnimActivity"></activity>
+        <activity android:name=".RvAnimActivity" />
+        <activity android:name=".ConstraintLayoutTransitionActivity" />
+        <activity android:name=".TransitionWithoutSceneActivity" />
         <activity android:name=".TransitionActivity" />
         <activity android:name=".VectorDrawableAnimActivity" />
         <activity android:name=".DrawableAnimActivity" />

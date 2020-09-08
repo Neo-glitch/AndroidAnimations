@@ -237,4 +237,5 @@ class MainActivity : AppCompatActivity(), Animator.AnimatorListener {
         intent = Intent(this, DrawableAnimActivity::class.java)
         startActivity(intent)
     }
+
 }

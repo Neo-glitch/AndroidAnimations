@@ -1,5 +1,6 @@
 package com.neo.androidanimations
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.transition.Fade
@@ -13,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_transition_without_scene.*
 /**
  * implements transition without the need of different scene or layout files
  */
-class TransitionWithoutScene : AppCompatActivity() {
+class TransitionWithoutSceneActivity : AppCompatActivity() {
     private var visibility = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,5 +44,9 @@ class TransitionWithoutScene : AppCompatActivity() {
         // when we try to modify prop of View SceneRoot by hiding or showing tv, transition is activated
         txvDescription.visibility = if (visibility) View.INVISIBLE else View.VISIBLE
         visibility = !visibility
+    }
+
+    fun goToConstraintLayoutTransActivity(view: View) {
+        startActivity(Intent(this, ConstraintLayoutTransitionActivity::class.java))
     }
 }

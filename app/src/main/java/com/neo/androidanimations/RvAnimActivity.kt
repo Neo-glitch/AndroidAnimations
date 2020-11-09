@@ -48,7 +48,7 @@ class RvAnimActivity : AppCompatActivity() {
 	}
 
 	fun goToViewPagerAnimActivity(view: View) {
-		startActivity(Intent(this, ViewPagerAnimActivity::class.java))
+		startActivity(Intent(this, ViewPagerAnimActivity::class.java	))
 	}
 }
 

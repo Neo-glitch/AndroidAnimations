@@ -92,7 +92,6 @@ class MainActivity : AppCompatActivity(), Animator.AnimatorListener {
             start()
         }
 
-
     }
 
     fun fadeAnimation(view: View) {
@@ -213,6 +212,7 @@ class MainActivity : AppCompatActivity(), Animator.AnimatorListener {
             translationX(200.0f)
             alpha(0.5f)
             interpolator = OvershootInterpolator()
+            start()
         }
     }
 

@@ -8,6 +8,8 @@ import android.view.View
 import android.view.animation.LinearInterpolator
 import kotlinx.android.synthetic.main.activity_transition.*
 
+
+// used to show how we can make transition to a new activity/ scene
 class TransitionActivity : AppCompatActivity() {
 
     private lateinit var scene1: Scene
@@ -22,7 +24,7 @@ class TransitionActivity : AppCompatActivity() {
         setContentView(R.layout.activity_transition)
 
         // Step 1: Create a Scene object for both the starting and ending layout
-        // sceneRoot is id of rootLayout where we want the animation to take place
+        // sceneRoot is id of rootLayout where we want the transition animation to take place
         scene1 = Scene.getSceneForLayout(sceneRoot, R.layout.scene1, this)
         scene2 = Scene.getSceneForLayout(sceneRoot, R.layout.scene2, this)
 
@@ -62,14 +64,14 @@ class TransitionActivity : AppCompatActivity() {
 
         // Step 3: Call TransitionManager.go() to run animation
 
-        if (currentScene === scene1) {
+        currentScene = if (currentScene === scene1) {
             // move to scene 2 with transition passed
-//            TransitionManager.go(scene2, transition)
+    //            TransitionManager.go(scene2, transition)
             TransitionManager.go(scene2, transitionSet)
-            currentScene = scene2
+            scene2
         } else {
             TransitionManager.go(scene1, transitionSet)
-            currentScene = scene1
+            scene1
 
         }
     }

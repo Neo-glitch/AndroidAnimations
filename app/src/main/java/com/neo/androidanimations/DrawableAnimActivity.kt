@@ -18,8 +18,9 @@ class DrawableAnimActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-
+        //battery_anim_list is animDrawable file
         targetImage.setBackgroundResource(R.drawable.battery_animation_list)
+
         // extract the background resource type casted as an animDrawable
         batteryAnimation = targetImage.background as AnimationDrawable
         batteryAnimation.start()

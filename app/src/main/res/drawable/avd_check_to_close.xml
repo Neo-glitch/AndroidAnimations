@@ -1,5 +1,3 @@
-
-
 <!-- This anim does morphing of check icon to cross icon-->
 <animated-vector
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -40,7 +38,7 @@
         </aapt:attr>
     </target>
 
-    <!--  animation  -->
+    <!--  morph animation  -->
     <target android:name="tick">
         <aapt:attr name="android:animation">
             <objectAnimator

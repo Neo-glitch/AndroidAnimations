@@ -38,7 +38,7 @@ class ConstraintLayoutTransitionActivity : AppCompatActivity() {
     private fun swapFrames(layoutId: Int){
         val constraintSet = ConstraintSet()
 
-        // gets all child views and constraints of the new layout to replaces the old one
+        // gets all child views and constraints of the new layout passed to replaces the old one
         constraintSet.clone(this, layoutId)
 
         // transition obj
